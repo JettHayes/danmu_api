@@ -626,9 +626,11 @@ API 支持返回 Bilibili 标准 XML 格式的弹幕数据，通过查询参数 
 ## 项目结构
 ```
 ├── .gitignore
+├── .pr_agent.toml              # PR Agent 配置文件
 ├── .github/
 │   └── workflows/
 │       ├── docker-image.yml     # Docker 镜像构建与推送
+│       ├── pr_agent.yml         # PR Agent 自动审查
 │       ├── sync_fork.yml        # Fork 仓库自动同步
 │       └── sync_hf.yml          # Hugging Face Space 同步
 ├── build-forward-widget.js     # 构建forward弹幕插件脚本
@@ -709,6 +711,7 @@ API 支持返回 Bilibili 标准 XML 格式的弹幕数据，通过查询参数 
 │   │   │   └── themes.css.js   # 管理界面主题样式
 │   │   └── js/
 │   │       ├── apitest.js      # API测试脚本
+│   │       ├── icons.js        # UI图标
 │   │       ├── localdanmu.js   # 本地弹幕上传与管理脚本
 │   │       ├── logview.js      # 日志查看脚本
 │   │       ├── main.js         # UI主脚本
